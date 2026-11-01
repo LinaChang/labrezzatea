@@ -1,0 +1,129 @@
+{
+  "checked_local_references": 5956,
+  "checked_navigation_references": 2246,
+  "checked_image_references": 963,
+  "missing_navigation": [],
+  "missing_dependencies": [
+    {
+      "file": "templates/ltperook/css/bootstrap.min.css",
+      "reference": "../fonts/glyphicons-halflings-regular.eot",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/bootstrap.min.css",
+      "reference": "../fonts/glyphicons-halflings-regular.eot?#iefix",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/bootstrap.min.css",
+      "reference": "../fonts/glyphicons-halflings-regular.woff2",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/bootstrap.min.css",
+      "reference": "../fonts/glyphicons-halflings-regular.woff",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/bootstrap.min.css",
+      "reference": "../fonts/glyphicons-halflings-regular.ttf",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/bootstrap.min.css",
+      "reference": "../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/default.css",
+      "reference": "../images/header-title.png",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/frontend-edit.css",
+      "reference": "bootstrap-legacy/variables",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/frontend-edit.css",
+      "reference": "bootstrap-legacy/mixins",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/frontend-edit.css",
+      "reference": "bootstrap-legacy/forms.less",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/frontend-edit.css",
+      "reference": "bootstrap-legacy/wells.less",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/frontend-edit.css",
+      "reference": "bootstrap-legacy/accordion.less",
+      "occurrences": 1
+    },
+    {
+      "file": "templates/ltperook/css/template.css",
+      "reference": "../images/helix-logo-white.png",
+      "occurrences": 1
+    }
+  ],
+  "download_failures": [
+    {
+      "url": "https://www.labrezzatea.com/sitemap.xml",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/css/bootstrap-legacy/accordion.less",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/css/bootstrap-legacy/forms.less",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/css/bootstrap-legacy/mixins",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/css/bootstrap-legacy/variables",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/css/bootstrap-legacy/wells.less",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/fonts/glyphicons-halflings-regular.eot",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/fonts/glyphicons-halflings-regular.svg",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/fonts/glyphicons-halflings-regular.ttf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/fonts/glyphicons-halflings-regular.woff",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/fonts/glyphicons-halflings-regular.woff2",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/images/header-title.png",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.labrezzatea.com/templates/ltperook/images/helix-logo-white.png",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "document_files": [],
+  "visual_qa": "Not performed: browser permission was declined."
+}

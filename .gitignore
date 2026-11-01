@@ -1,0 +1,6 @@
+.mirror-cache/
+__pycache__/
+crawl-progress.json
+*.zip
+site/dist/
+.claude/

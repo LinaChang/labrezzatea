@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-tw" lang="zh-tw" dir="ltr">
+    <head>
+<meta http-equiv="Content-Security-Policy" content="connect-src 'none'; frame-src 'none'; form-action 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: blob:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                                <!-- head -->
+                
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="中焙韻香型茶品" />
+	<meta name="description" content="中焙韻香型茶品" />
+	<meta name="generator" content="瑞德網頁設計" />
+	<title>中焙韻香型茶品 - 風玥茶研所La'Brezza</title>
+	<link href="type-rss.feed" rel="alternate" type="application/rss+xml" title="中焙韻香型茶品 RSS 2.0" />
+	<link href="type-atom.feed" rel="alternate" type="application/atom+xml" title="中焙韻香型茶品 Atom 1.0" />
+	<link href="../../../images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../../../templates/ltperook/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../../../media/com_hikashop/css/hikashop.css" rel="stylesheet" type="text/css" />
+	<link href="../../../media/com_hikashop/css/frontend_default.css" rel="stylesheet" type="text/css" />
+	<link href="../../../media/com_hikashop/css/style_custom.css" rel="stylesheet" type="text/css" />
+	<link href="../../../media/com_hikashop/css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link href="../../../_external/fonts.googleapis.com/css__q_211411b581ad.css" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/ltperook/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/ltperook/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/ltperook/css/default.css" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/ltperook/css/legacy.css" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/ltperook/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/ltperook/css/presets/preset1.css" rel="stylesheet" type="text/css" class="preset" />
+	<link href="../../../templates/ltperook/css/frontend-edit.css" rel="stylesheet" type="text/css" />
+	<link href="../../../media/com_hikashop/css/notify-metro.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+#hikashop_category_information_menu_119 div.hikashop_subcontainer,
+#hikashop_category_information_menu_119 .hikashop_rtop *,#hikashop_category_information_menu_119 .hikashop_rbottom * { background:#091a3b; }
+#hikashop_category_information_menu_119 div.hikashop_subcontainer,
+#hikashop_category_information_menu_119 div.hikashop_subcontainer span,
+#hikashop_category_information_menu_119 div.hikashop_container { text-align:center; }
+#hikashop_category_information_menu_119 div.hikashop_container { margin:19px 19px; }
+#hikashop_category_information_menu_119 .hikashop_subcontainer { -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }
+#hikashop_category_information_module_ div.hikashop_subcontainer,
+#hikashop_category_information_module_ .hikashop_rtop *,#hikashop_category_information_module_ .hikashop_rbottom * { background:#091a3b; }
+#hikashop_category_information_module_ div.hikashop_subcontainer,
+#hikashop_category_information_module_ div.hikashop_subcontainer span,
+#hikashop_category_information_module_ div.hikashop_container { text-align:center; }
+#hikashop_category_information_module_ div.hikashop_container { margin:19px 19px; }
+#hikashop_category_information_module_ .hikashop_subcontainer { -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }body{font-family:Open Sans, sans-serif; font-weight:300; }h1{font-family:Open Sans, sans-serif; font-weight:800; }h2{font-family:Open Sans, sans-serif; font-weight:600; }h3{font-family:Open Sans, sans-serif; font-weight:normal; }h4{font-family:Open Sans, sans-serif; font-weight:normal; }h5{font-family:Open Sans, sans-serif; font-weight:600; }h6{font-family:Open Sans, sans-serif; font-weight:600; }#sp-top-bar{ background-color:#f5f5f5;color:#999999; }
+	</style>
+	<script src="../../../media/jui/js/jquery.min.js" type="text/javascript"></script>
+	<script src="../../../media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="../../../media/com_hikashop/js/hikashop.js" type="text/javascript"></script>
+	<script src="../../../media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="../../../templates/ltperook/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../../../templates/ltperook/js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="../../../templates/ltperook/js/main.js" type="text/javascript"></script>
+	<script src="../../../templates/ltperook/js/wow.min.js" type="text/javascript"></script>
+	<script src="../../../templates/ltperook/js/custom.js" type="text/javascript"></script>
+	<script src="../../../templates/ltperook/js/scroll.js" type="text/javascript"></script>
+	<script src="../../../templates/ltperook/js/jquery.easing.min.js" type="text/javascript"></script>
+	<script src="../../../templates/ltperook/js/frontend-edit.js" type="text/javascript"></script>
+	<script src="../../../media/com_hikashop/js/notify.min.js" type="text/javascript"></script>
+	<script src="../../../plugins/hikashop/cartnotify/media/notify.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+var sp_preloader = '';
+
+var sp_gotop = '';
+
+var sp_offanimation = 'default';
+
+jQuery.notify.defaults({"arrowShow":false,"globalPosition":"top right","elementPosition":"top right","clickToHide":true,"autoHideDelay":5000,"autoHide":true});
+window.cartNotifyParams = {"reference":"global","img_url":"\/media\/com_hikashop\/images\/icons\/icon-32-newproduct.png","redirect_url":"","redirect_delay":4000,"title":"Product added to the cart","text":"\u5546\u54c1\u5df2\u6210\u529f\u653e\u5165\u8cfc\u7269\u8eca","wishlist_title":"Product added to the wishlist","wishlist_text":"Product successfully added to the wishlist","list_title":"Products added to the cart","list_text":"Products successfully added to the cart","list_wishlist_title":"Products added to the wishlist","list_wishlist_text":"Products successfully added to the wishlist","err_title":"Product not added to the cart","err_text":"Product not added to the cart","err_wishlist_title":"Product not added to the wishlist","err_wishlist_text":"Product not added to the wishlist"};
+
+	</script>
+
+                                </head>
+                <body class="site com-hikashop view-category layout-listing task-listing itemid-119 zh-tw ltr  sticky-header layout-fluid off-canvas-menu-init">
+
+                    <div class="body-wrapper">
+                        <div class="body-innerwrapper">
+                            <section id="sp-top-bar"><div class="container"><div class="row"><div id="sp-top1" class="col-sm-6 col-md-6"><div class="sp-column "></div></div><div id="sp-top2" class="col-sm-6 col-md-6"><div class="sp-column "><ul class="sp-contact-info"></ul></div></div></div></div></section><header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-3 col-md-3"><div class="sp-column "><div class="logo"><a href="../../../index.html"><img class="sp-default-logo hidden-xs" src="../../../images/logo-291x33.png" alt="風玥茶研所La'Brezza"><img class="sp-retina-logo hidden-xs" src="../../../images/logo-291x33.png" alt="風玥茶研所La'Brezza" width="291" height="33"><img class="sp-default-logo visible-xs" src="../../../images/logo-291x33.png" alt="風玥茶研所La'Brezza"></a></div></div></div><div id="sp-menu" class="col-xs-4 col-sm-9 col-md-9"><div class="sp-column ">			<div class='sp-megamenu-wrapper'>
+				<a id="offcanvas-toggler" class="visible-sm visible-xs" aria-label="Menu" href="#"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a>
+				<ul class="sp-megamenu-parent menu-fade hidden-sm hidden-xs"><li class="sp-menu-item"><a  href="../../../index.html"  >風玥茶研所</a></li><li class="sp-menu-item sp-has-child"><a  href="#"  >揭幕</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="../../../about/about-us.html"  >關於風玥</a></li><li class="sp-menu-item"><a  href="../../../about/services.html"  >服務項目</a></li><li class="sp-menu-item"><a  href="../../../about/award.html"  >獲獎經歷</a></li></ul></div></div></li><li class="sp-menu-item current-item active"><a  href="../../../projects.html"  >茶品意境</a></li><li class="sp-menu-item"><a  href="../../../faq.html"  >茶學語錄</a></li><li class="sp-menu-item sp-has-child"><a  href="#"  >茶文記事</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="../../../journey/news.html"  >茶語新聞錄</a></li><li class="sp-menu-item"><a  href="../../../journey/blog.html"  >茶旅人文撰</a></li></ul></div></div></li><li class="sp-menu-item"><a  href="../../../contact-us.html"  >聯絡資訊</a></li></ul>			</div>
+		</div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-title" class="col-sm-12 col-md-12"><div class="sp-column "></div></div></div></section><section id="sp-main-body"><div class="container"><div class="row"><div id="sp-component" class="col-sm-12 col-md-12"><div class="sp-column "><div id="system-message-container">
+	</div>
+	<div id="hikashop_category_information_menu_119" class="hikashop_category_information hikashop_categories_listing_main hikashop_category_listing_13">
+			<h1>
+	中焙韻香型茶品	</h1>
+			<div class="hikashop_category_description">
+					<div class="hikashop_category_description_content">
+			<p>循著幾近式微傳統酵香工法製成的台灣烏龍茶品</p>
+<p>賦予其獨特清新高雅芬芳，散發著鮮花及胭脂般怡人酵香韻</p>
+<p>經傳統龍眼木炭文火慢焙，締造出淡麗顯黃且清澈明亮的茶湯色澤</p>
+<p>香氣清揚滋味柔順、餘韻醇厚甘甜</p>
+<p>為深具台灣傳統製茶工藝歷史脈絡之特色茶品</p>			</div>
+					</div>
+	<div class="hikashop_submodules" style="clear:both">	<div id="hikashop_category_information_module_" class="hikashop_category_information hikashop_products_listing_main hikashop_product_listing_13 filter_refresh_div" data-refresh-class="hikashop_checkout_loading" data-refresh-url="https://www.labrezzatea.com/projects/category/13-mid/type-atom.feed?tmpl=raw&filter=1" data-use-url="1">
+		<div class="hikashop_checkout_loading_elem"></div>
+		<div class="hikashop_checkout_loading_spinner"></div>
+	<div class="hikashop_products_listing">
+<div class="hikashop_products" data-consistencyheight=".hikashop_subcontainer" itemscope="" itemtype="https://schema.org/itemListElement">
+<div class="hk-row-fluid">		<div class="hkc-md-6 hikashop_product hikashop_product_column_1 hikashop_product_row_1"
+			itemprop="itemList" itemscope="" itemtype="http://schema.org/ItemList">
+			<div class="hikashop_container">
+				<div class="hikashop_subcontainer thumbnail">
+<div class="hikashop_listing_img_title" id="div_hikashop_category_information_module__5">
+	<!-- PRODUCT IMG -->
+	<div class="hikashop_product_image">
+		<div class="hikashop_product_image_subdiv">
+			<a href="../../product/5-mid-02.html" title="高山蜜香烏龍茶">
+<img class="hikashop_product_listing_image" title="" alt="mid_1380901666" src="../../../images/com_hikashop/upload/mid_1380901666.jpg"/>		<meta itemprop="image" content=/images/com_hikashop/upload/mid_1380901666.jpg/>
+			</a>
+		</div>
+	</div>
+	<!-- EO PRODUCT IMG -->
+
+	<!-- PRODUCT PRICE -->
+	<!-- EO PRODUCT PRICE -->
+
+	<!-- PRODUCT NAME -->
+	<span class="hikashop_product_name">
+		<a href="../../product/5-mid-02.html">
+			高山蜜香烏龍茶		</a>
+	</span>
+	<meta itemprop="name" content="高山蜜香烏龍茶">
+	<!-- EO PRODUCT NAME -->
+
+	<!-- PRODUCT CODE -->
+		<span class='hikashop_product_code_list'>
+		</span>
+	<!-- EO PRODUCT CODE -->
+
+	<!-- PRODUCT CUSTOM FIELDS -->
+	<!-- EO PRODUCT CUSTOM FIELDS -->
+
+
+	<!-- PRODUCT VOTE -->
+	<!-- EO PRODUCT VOTE -->
+
+	<!-- ADD TO CART BUTTON AREA -->
+	<!-- EO ADD TO CART BUTTON AREA -->
+
+	<!-- COMPARISON AREA -->
+	<!-- EO COMPARISON AREA -->
+
+	<!-- CONTACT US AREA -->
+
+	<!-- EO CONTACT US AREA -->
+
+	<!-- PRODUCT DETAILS BUTTON AREA -->
+
+	<!-- EO PRODUCT DETAILS BUTTON AREA -->
+
+	<meta itemprop="url" content="/projects/product/5-mid-02.html">
+</div>
+				</div>
+			</div>
+		</div>
+		<div class="hkc-md-6 hikashop_product hikashop_product_column_2 hikashop_product_row_1"
+			itemprop="itemList" itemscope="" itemtype="http://schema.org/ItemList">
+			<div class="hikashop_container">
+				<div class="hikashop_subcontainer thumbnail">
+<div class="hikashop_listing_img_title" id="div_hikashop_category_information_module__4">
+	<!-- PRODUCT IMG -->
+	<div class="hikashop_product_image">
+		<div class="hikashop_product_image_subdiv">
+			<a href="../../product/4-mid-01.html" title="高山蜜香冬片">
+<img class="hikashop_product_listing_image" title="" alt="mid-01" src="../../../images/com_hikashop/upload/mid-01.jpg"/>		<meta itemprop="image" content=/images/com_hikashop/upload/mid-01.jpg/>
+			</a>
+		</div>
+	</div>
+	<!-- EO PRODUCT IMG -->
+
+	<!-- PRODUCT PRICE -->
+	<!-- EO PRODUCT PRICE -->
+
+	<!-- PRODUCT NAME -->
+	<span class="hikashop_product_name">
+		<a href="../../product/4-mid-01.html">
+			高山蜜香冬片		</a>
+	</span>
+	<meta itemprop="name" content="高山蜜香冬片">
+	<!-- EO PRODUCT NAME -->
+
+	<!-- PRODUCT CODE -->
+		<span class='hikashop_product_code_list'>
+		</span>
+	<!-- EO PRODUCT CODE -->
+
+	<!-- PRODUCT CUSTOM FIELDS -->
+	<!-- EO PRODUCT CUSTOM FIELDS -->
+
+
+	<!-- PRODUCT VOTE -->
+	<!-- EO PRODUCT VOTE -->
+
+	<!-- ADD TO CART BUTTON AREA -->
+	<!-- EO ADD TO CART BUTTON AREA -->
+
+	<!-- COMPARISON AREA -->
+	<!-- EO COMPARISON AREA -->
+
+	<!-- CONTACT US AREA -->
+
+	<!-- EO CONTACT US AREA -->
+
+	<!-- PRODUCT DETAILS BUTTON AREA -->
+
+	<!-- EO PRODUCT DETAILS BUTTON AREA -->
+
+	<meta itemprop="url" content="/projects/product/4-mid-01.html">
+</div>
+				</div>
+			</div>
+		</div>
+		<div class="hkc-md-6 hikashop_product hikashop_product_column_1 hikashop_product_row_2"
+			itemprop="itemList" itemscope="" itemtype="http://schema.org/ItemList">
+			<div class="hikashop_container">
+				<div class="hikashop_subcontainer thumbnail">
+<div class="hikashop_listing_img_title" id="div_hikashop_category_information_module__9">
+	<!-- PRODUCT IMG -->
+	<div class="hikashop_product_image">
+		<div class="hikashop_product_image_subdiv">
+			<a href="../../product/9-mid-03.html" title="傳統凍頂烏龍茶">
+<img class="hikashop_product_listing_image" title="" alt="mid-03" src="../../../images/com_hikashop/upload/mid-03.jpg"/>		<meta itemprop="image" content=/images/com_hikashop/upload/mid-03.jpg/>
+			</a>
+		</div>
+	</div>
+	<!-- EO PRODUCT IMG -->
+
+	<!-- PRODUCT PRICE -->
+	<!-- EO PRODUCT PRICE -->
+
+	<!-- PRODUCT NAME -->
+	<span class="hikashop_product_name">
+		<a href="../../product/9-mid-03.html">
+			傳統凍頂烏龍茶		</a>
+	</span>
+	<meta itemprop="name" content="傳統凍頂烏龍茶">
+	<!-- EO PRODUCT NAME -->
+
+	<!-- PRODUCT CODE -->
+		<span class='hikashop_product_code_list'>
+		</span>
+	<!-- EO PRODUCT CODE -->
+
+	<!-- PRODUCT CUSTOM FIELDS -->
+	<!-- EO PRODUCT CUSTOM FIELDS -->
+
+
+	<!-- PRODUCT VOTE -->
+	<!-- EO PRODUCT VOTE -->
+
+	<!-- ADD TO CART BUTTON AREA -->
+	<!-- EO ADD TO CART BUTTON AREA -->
+
+	<!-- COMPARISON AREA -->
+	<!-- EO COMPARISON AREA -->
+
+	<!-- CONTACT US AREA -->
+
+	<!-- EO CONTACT US AREA -->
+
+	<!-- PRODUCT DETAILS BUTTON AREA -->
+
+	<!-- EO PRODUCT DETAILS BUTTON AREA -->
+
+	<meta itemprop="url" content="/projects/product/9-mid-03.html">
+</div>
+				</div>
+			</div>
+		</div>
+		<div class="hkc-md-6 hikashop_product hikashop_product_column_2 hikashop_product_row_2"
+			itemprop="itemList" itemscope="" itemtype="http://schema.org/ItemList">
+			<div class="hikashop_container">
+				<div class="hikashop_subcontainer thumbnail">
+<div class="hikashop_listing_img_title" id="div_hikashop_category_information_module__10">
+	<!-- PRODUCT IMG -->
+	<div class="hikashop_product_image">
+		<div class="hikashop_product_image_subdiv">
+			<a href="../../product/10-mid-04.html" title="高冷正欉鐵觀音">
+<img class="hikashop_product_listing_image" title="" alt="mid-04" src="../../../images/com_hikashop/upload/mid-04.jpg"/>		<meta itemprop="image" content=/images/com_hikashop/upload/mid-04.jpg/>
+			</a>
+		</div>
+	</div>
+	<!-- EO PRODUCT IMG -->
+
+	<!-- PRODUCT PRICE -->
+	<!-- EO PRODUCT PRICE -->
+
+	<!-- PRODUCT NAME -->
+	<span class="hikashop_product_name">
+		<a href="../../product/10-mid-04.html">
+			高冷正欉鐵觀音		</a>
+	</span>
+	<meta itemprop="name" content="高冷正欉鐵觀音">
+	<!-- EO PRODUCT NAME -->
+
+	<!-- PRODUCT CODE -->
+		<span class='hikashop_product_code_list'>
+		</span>
+	<!-- EO PRODUCT CODE -->
+
+	<!-- PRODUCT CUSTOM FIELDS -->
+	<!-- EO PRODUCT CUSTOM FIELDS -->
+
+
+	<!-- PRODUCT VOTE -->
+	<!-- EO PRODUCT VOTE -->
+
+	<!-- ADD TO CART BUTTON AREA -->
+	<!-- EO ADD TO CART BUTTON AREA -->
+
+	<!-- COMPARISON AREA -->
+	<!-- EO COMPARISON AREA -->
+
+	<!-- CONTACT US AREA -->
+
+	<!-- EO CONTACT US AREA -->
+
+	<!-- PRODUCT DETAILS BUTTON AREA -->
+
+	<!-- EO PRODUCT DETAILS BUTTON AREA -->
+
+	<meta itemprop="url" content="/projects/product/10-mid-04.html">
+</div>
+				</div>
+			</div>
+		</div>
+		<div class="hkc-md-6 hikashop_product hikashop_product_column_1 hikashop_product_row_3"
+			itemprop="itemList" itemscope="" itemtype="http://schema.org/ItemList">
+			<div class="hikashop_container">
+				<div class="hikashop_subcontainer thumbnail">
+<div class="hikashop_listing_img_title" id="div_hikashop_category_information_module__11">
+	<!-- PRODUCT IMG -->
+	<div class="hikashop_product_image">
+		<div class="hikashop_product_image_subdiv">
+			<a href="../../product/11-mid-05.html" title="四季春​冬片">
+<img class="hikashop_product_listing_image" title="" alt="mid-05" src="../../../images/com_hikashop/upload/mid-05.jpg"/>		<meta itemprop="image" content=/images/com_hikashop/upload/mid-05.jpg/>
+			</a>
+		</div>
+	</div>
+	<!-- EO PRODUCT IMG -->
+
+	<!-- PRODUCT PRICE -->
+	<!-- EO PRODUCT PRICE -->
+
+	<!-- PRODUCT NAME -->
+	<span class="hikashop_product_name">
+		<a href="../../product/11-mid-05.html">
+			四季春​冬片		</a>
+	</span>
+	<meta itemprop="name" content="四季春​冬片">
+	<!-- EO PRODUCT NAME -->
+
+	<!-- PRODUCT CODE -->
+		<span class='hikashop_product_code_list'>
+		</span>
+	<!-- EO PRODUCT CODE -->
+
+	<!-- PRODUCT CUSTOM FIELDS -->
+	<!-- EO PRODUCT CUSTOM FIELDS -->
+
+
+	<!-- PRODUCT VOTE -->
+	<!-- EO PRODUCT VOTE -->
+
+	<!-- ADD TO CART BUTTON AREA -->
+	<!-- EO ADD TO CART BUTTON AREA -->
+
+	<!-- COMPARISON AREA -->
+	<!-- EO COMPARISON AREA -->
+
+	<!-- CONTACT US AREA -->
+
+	<!-- EO CONTACT US AREA -->
+
+	<!-- PRODUCT DETAILS BUTTON AREA -->
+
+	<!-- EO PRODUCT DETAILS BUTTON AREA -->
+
+	<meta itemprop="url" content="/projects/product/11-mid-05.html">
+</div>
+				</div>
+			</div>
+		</div>
+</div>		<div style="clear:both"></div>
+</div>
+<form action="type-atom.feed" method="post" name="adminForm_hikashop_category_information_module__13_bottom"><p class="offline-note" role="note">離線預覽：此表單僅展示，無法送出。</p>
+	<div class="hikashop_products_pagination hikashop_products_pagination_bottom">
+		<div class="list-footer pagination pagination-toolbar clearfix">
+
+<div class="limit">顯示數目<select id="limit" name="limit" class="chzn-done inputbox" size="1" style="width:70px" onchange="this.form.submit()">
+	<option value="14" selected="selected">14</option>
+	<option value="28">28</option>
+	<option value="42">42</option>
+	<option value="56">56</option>
+	<option value="70">70</option>
+	<option value="0">全部</option>
+</select>
+</div>
+<div class="counter"></div>
+<input type="hidden" name="limitstart" value="0" />
+</div>		<span class="hikashop_results_counter">
+結果 1 - 5 總共 5</span>
+	</div>
+	<input type="hidden" name="filter_order_hikashop_category_information_module__13" value="a.ordering" />
+	<input type="hidden" name="filter_order_Dir_hikashop_category_information_module__13" value="DESC" />
+	<input type="hidden" name="8941d38ef76e274ea78378b3abfed710" value="1" /></form>
+	</div>
+	</div>
+</div>	</div>
+<!--  HikaShop Component powered by http://www.hikashop.com -->
+	<!-- version Business : 4.2.1 [1909181610] --></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content"><div class="footer1">Copyright &#169; 2026 by 風玥茶研所La'Brezza. Web Design: <a href="https://www.redd.com.tw" target="_blank" title="瑞德網頁設計" style="color: #ffffff !important;">Redd Studio</a>.</div>
+<div class="footer2"></div>
+</div></div></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
+                    </div> <!-- /.body-innerwrapper -->
+
+                    <!-- Off Canvas Menu -->
+                    <div class="offcanvas-menu">
+                        <a href="#" class="close-offcanvas"><i class="fa fa-remove"></i></a>
+                        <div class="offcanvas-inner">
+                                                          <div class="sp-module "><h3 class="sp-module-title">風玥茶研所</h3><div class="sp-module-content"><ul class="nav menu">
+<li class="item-101"><a href="../../../index.html" > 風玥茶研所</a></li><li class="item-116  deeper parent"><a href="#" > 揭幕</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-116"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-116"><li class="item-102"><a href="../../../about/about-us.html" > 關於風玥</a></li><li class="item-117"><a href="../../../about/services.html" > 服務項目</a></li><li class="item-118"><a href="../../../about/award.html" > 獲獎經歷</a></li></ul></li><li class="item-119  current active"><a href="../../../projects.html" > 茶品意境</a></li><li class="item-140"><a href="../../../faq.html" > 茶學語錄</a></li><li class="item-133  deeper parent"><a href="#" > 茶文記事</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-133"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-133"><li class="item-103"><a href="../../../journey/news.html" > 茶語新聞錄</a></li><li class="item-146"><a href="../../../journey/blog.html" > 茶旅人文撰</a></li></ul></li><li class="item-106"><a href="../../../contact-us.html" > 聯絡資訊</a></li></ul>
+</div></div>
+                                                    </div> <!-- /.offcanvas-inner -->
+                    </div> <!-- /.offcanvas-menu -->
+
+                    
+                    
+                    <!-- Preloader -->
+                    
+                    <!-- Go to top -->
+                                        <!--<p align="center"><a href="https://ltheme.com/joomla-templates/" target="_blank" title="Free Joomla templates">Free Joomla templates</a>  by <a href="https://ltheme.com/" target="_blank" title="Joomla templates & Wordpress themes Marketplace">L.THEME</a></p>-->
+                <script>document.addEventListener("submit",function(e){e.preventDefault();alert("離線預覽無法送出表單，請連線至原站聯絡。");},true);</script></body>
+                </html>
