@@ -123,7 +123,7 @@ function layout({ route, title, description = S.seo.description, active = '', im
 <meta property="og:image" content="${CONFIG.siteUrl}/assets/${image}-1920.jpg">
 <meta property="og:locale" content="zh_TW">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#14110e">
+<meta name="theme-color" content="#0c0d0c">
 <link rel="icon" href="${p}assets/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

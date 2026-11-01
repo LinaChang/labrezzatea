@@ -1,4 +1,4 @@
-# 將 assets-src/ 的原始圖片縮成兩種寬度（800、1920），輸出到 assets/。
+﻿# 將 assets-src/ 的原始圖片縮成兩種寬度（800、1920），輸出到 assets/。
 # 用法：powershell -ExecutionPolicy Bypass -File site/scripts/optimize-images.ps1
 Add-Type -AssemblyName System.Drawing
 
@@ -11,10 +11,20 @@ $codec = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Obj
 $params = New-Object System.Drawing.Imaging.EncoderParameters 1
 $params.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter ([System.Drawing.Imaging.Encoder]::Quality), 80L
 
-# 不縮圖、直接複製的檔案
-foreach ($name in @('logo.png', 'favicon.ico')) {
-  Copy-Item (Join-Path $src $name) (Join-Path $dst $name) -Force
+Copy-Item (Join-Path $src 'favicon.ico') (Join-Path $dst 'favicon.ico') -Force
+
+# Logo 保留透明度，改成網站強調色（--accent #c9b37e）
+$logoSrc = [System.Drawing.Image]::FromFile((Join-Path $src 'logo.png'))
+$logo = New-Object System.Drawing.Bitmap -ArgumentList $logoSrc
+$logoSrc.Dispose()
+for ($y = 0; $y -lt $logo.Height; $y++) {
+  for ($x = 0; $x -lt $logo.Width; $x++) {
+    $a = $logo.GetPixel($x, $y).A
+    $logo.SetPixel($x, $y, [System.Drawing.Color]::FromArgb($a, 0xc9, 0xb3, 0x7e))
+  }
 }
+$logo.Save((Join-Path $dst 'logo.png'), [System.Drawing.Imaging.ImageFormat]::Png)
+$logo.Dispose()
 
 Get-ChildItem $src -File | Where-Object { $_.Extension -in '.jpg', '.png' -and $_.Name -ne 'logo.png' } | ForEach-Object {
   $base = $_.BaseName

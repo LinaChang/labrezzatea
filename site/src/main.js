@@ -124,8 +124,8 @@
             const a = Math.max(0, p.life * (0.55 + 0.45 * Math.sin(t / 140 + p.seed)));
             const px = p.x * W, py = p.y * H, rad = p.r * 6;
             const grd = x.createRadialGradient(px, py, 0, px, py, rad);
-            grd.addColorStop(0, 'rgba(255,' + (150 + p.g) + ',80,' + a + ')');
-            grd.addColorStop(1, 'rgba(255,120,40,0)');
+            grd.addColorStop(0, 'rgba(255,' + (190 + Math.round(p.g * .5)) + ',140,' + a * .85 + ')');
+            grd.addColorStop(1, 'rgba(220,170,90,0)');
             x.fillStyle = grd;
             x.beginPath(); x.arc(px, py, rad, 0, 6.283); x.fill();
           }

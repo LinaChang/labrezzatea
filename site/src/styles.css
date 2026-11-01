@@ -1,18 +1,20 @@
 /* 風玥茶研所 La'Brezza — 方案 1a「焙火敘事」 */
 
 :root {
-  --bg: #14110e;
-  --bg-hover: #1a1612;
-  --bg-card: #1d1813;
-  --line: #3a3128;
-  --grid: #2b241d;
-  --text: #efe6d8;
-  --body: #cfc4b3;
-  --hero-body: #d8cdbd;
-  --muted: #a89a86;
-  --footer: #8a7e6e;
-  --accent: #e8b778;
-  --roast: linear-gradient(90deg, #d8cf8a 0%, #c9a24a 30%, #9a5b1e 62%, #4a2410 88%, #2a160c 100%);
+  /* 墨韻香檳：近黑帶茶青的底色、象牙白文字、低彩度香檳金 */
+  --bg-rgb: 12, 13, 12;
+  --bg: rgb(var(--bg-rgb));
+  --bg-hover: #131513;
+  --bg-card: #171917;
+  --line: #2b2e2a;
+  --grid: #1d201c;
+  --text: #ebe6db;
+  --body: #b9b5aa;
+  --hero-body: #d0cbbf;
+  --muted: #8b887e;
+  --footer: #7a776e;
+  --accent: #c9b37e;
+  --roast: linear-gradient(90deg, #d6d2a4 0%, #b9a15e 30%, #876436 62%, #46301b 88%, #22180f 100%);
   --gutter: clamp(24px, 4.5vw, 64px);
   --ease: cubic-bezier(.2, .7, .2, 1);
   --serif: 'Noto Serif TC', serif;
@@ -100,7 +102,7 @@ a:hover .zoom > img { transform: scale(1.06); }
 }
 .site-header.is-scrolled {
   padding-top: 20px; padding-bottom: 20px;
-  background: rgba(20, 17, 14, .92);
+  background: rgba(var(--bg-rgb), .92);
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   border-bottom-color: var(--line);
 }
@@ -131,7 +133,7 @@ a:hover .zoom > img { transform: scale(1.06); }
 .banner { position: relative; height: 620px; overflow: hidden; }
 .banner .shade {
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(20, 17, 14, .6) 0%, rgba(20, 17, 14, .3) 45%, var(--bg) 100%);
+  background: linear-gradient(180deg, rgba(var(--bg-rgb), .6) 0%, rgba(var(--bg-rgb), .3) 45%, var(--bg) 100%);
 }
 .banner .content {
   position: absolute; left: var(--gutter); right: var(--gutter); bottom: 72px;
@@ -144,7 +146,7 @@ a:hover .zoom > img { transform: scale(1.06); }
 .hero { position: relative; height: 100vh; height: 100svh; min-height: 720px; max-height: 960px; overflow: hidden; }
 .hero .shade {
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(20, 17, 14, .55) 0%, rgba(20, 17, 14, .1) 40%, rgba(20, 17, 14, .92) 100%);
+  background: linear-gradient(180deg, rgba(var(--bg-rgb), .55) 0%, rgba(var(--bg-rgb), .1) 40%, rgba(var(--bg-rgb), .92) 100%);
 }
 .hero .content {
   position: absolute; left: var(--gutter); right: var(--gutter); bottom: 96px;
@@ -188,7 +190,7 @@ a:hover .zoom > img { transform: scale(1.06); }
 .cat-card .teas { font-family: var(--sans); font-size: 15px; color: var(--muted); line-height: 1.8; }
 
 .craft { position: relative; height: 760px; overflow: hidden; }
-.craft .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20, 17, 14, .95) 0%, rgba(20, 17, 14, .6) 50%, rgba(20, 17, 14, 0) 80%); }
+.craft .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(var(--bg-rgb), .95) 0%, rgba(var(--bg-rgb), .6) 50%, rgba(var(--bg-rgb), 0) 80%); }
 .craft .content {
   position: absolute; left: var(--gutter); right: var(--gutter); top: 0; bottom: 0;
   display: flex; flex-direction: column; justify-content: center; gap: 32px; max-width: 620px;
@@ -229,7 +231,7 @@ a:hover .zoom > img { transform: scale(1.06); }
   position: relative; min-height: 640px; overflow: hidden;
   display: flex; align-items: center; justify-content: center; text-align: center;
 }
-.closing .shade { position: absolute; inset: 0; background: rgba(20, 17, 14, .78); }
+.closing .shade { position: absolute; inset: 0; background: rgba(var(--bg-rgb), .78); }
 .closing .content { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 96px var(--gutter); }
 .closing .accent { color: var(--accent); }
 
@@ -281,7 +283,7 @@ a:hover .zoom > img { transform: scale(1.06); }
 /* ---------- 茶品 ---------- */
 .tea-filter {
   position: sticky; top: var(--nav-h); z-index: 20;
-  background: rgba(20, 17, 14, .94); border-bottom: 1px solid var(--line);
+  background: rgba(var(--bg-rgb), .94); border-bottom: 1px solid var(--line);
   padding: 28px var(--gutter) 24px; display: flex; flex-direction: column; gap: 20px;
 }
 .tea-tabs { display: flex; gap: clamp(16px, 3vw, 48px); flex-wrap: wrap; font-family: var(--sans); font-size: 16px; }
@@ -439,7 +441,7 @@ a:hover .zoom > img { transform: scale(1.06); }
 .contact-form input:focus { border-bottom-color: var(--accent); }
 .contact-form textarea:focus { border-color: var(--accent); }
 .contact-form .hp { position: absolute; left: -9999px; }
-.contact-form .error { font-family: var(--sans); font-size: 15px; color: #e88f78; }
+.contact-form .error { font-family: var(--sans); font-size: 15px; color: #d49a8a; }
 .form-done { display: flex; flex-direction: column; gap: 20px; padding: 48px; border: 1px solid var(--line); }
 .form-done[hidden] { display: none; }
 .form-done .ty { font: italic 400 24px var(--latin); color: var(--accent); }
@@ -485,7 +487,7 @@ main { animation: page-in .5s ease-out; }
   .faq-toc {
     position: sticky; top: var(--nav-h); z-index: 10; flex-direction: row; overflow-x: auto;
     margin: 0 calc(var(--gutter) * -1); padding: 0 var(--gutter);
-    background: rgba(20, 17, 14, .94); border-top: 0; border-bottom: 1px solid var(--line);
+    background: rgba(var(--bg-rgb), .94); border-top: 0; border-bottom: 1px solid var(--line);
     scrollbar-width: none;
   }
   .faq-toc::-webkit-scrollbar { display: none; }
@@ -536,7 +538,7 @@ main { animation: page-in .5s ease-out; }
   .banner .content { bottom: 48px; }
   .section { padding-top: 96px; padding-bottom: 96px; }
   .craft { height: 640px; }
-  .craft .shade { background: linear-gradient(180deg, rgba(20, 17, 14, .6) 0%, rgba(20, 17, 14, .9) 100%); }
+  .craft .shade { background: linear-gradient(180deg, rgba(var(--bg-rgb), .6) 0%, rgba(var(--bg-rgb), .9) 100%); }
   .honor-row { grid-template-columns: 64px minmax(0, 1fr) auto; gap: 16px; }
   .honor-row .year { font-size: 24px; }
   .honor-row .title { font-size: 19px; }
