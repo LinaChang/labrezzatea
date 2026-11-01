@@ -111,6 +111,7 @@ function layout({ route, title, description = S.seo.description, active = '', im
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="${CONFIG.basePath}${route}">
 <title>${esc(fullTitle)}</title>
 <meta name="description" content="${esc(description)}">
 <meta name="keywords" content="${esc(S.seo.keywords)}">
@@ -144,8 +145,8 @@ ${footer(p)}
 `;
 }
 
-function banner(p, { img, label, title, sub = '', extra = '' }) {
-  return `<section class="banner">
+function banner(p, { img, label, title, sub = '', extra = '', compact = false }) {
+  return `<section class="banner${compact ? ' banner--compact' : ''}">
   <div class="fill" data-kb>${pic(p, img, { eager: true })}</div>
   <div class="shade"></div>
   <div class="content">
@@ -165,7 +166,8 @@ const teaCard = (p, t, i) => {
     </a>`;
 };
 
-const roastScale = full => `<div class="roast-scale mono-sm">${(full ? ['淺焙 LIGHT', '中焙 MEDIUM', '深焙 DEEP', '競賽級 AWARD'] : ['淺焙', '中焙', '深焙', '競賽級']).map(s => `<span>${s}</span>`).join('')}</div>`;
+const roastPositions = { light: 8, mid: 50, deep: 92 };
+const roastScale = full => `<div class="roast-scale mono-sm">${(full ? ['淺焙 LIGHT', '中焙 MEDIUM', '深焙 DEEP'] : ['淺焙', '中焙', '深焙']).map(s => `<span>${s}</span>`).join('')}</div>`;
 
 // ---------- 各頁 ----------
 const pages = [];
@@ -177,17 +179,17 @@ page('', {
   body: p => `<section class="hero">
   <div class="fill" data-kb>${pic(p, 's7', { eager: true })}</div>
   <div class="shade"></div>
-  <div class="embers" data-embers></div>
   <div class="content">
     <div class="since" ${reveal(200)}>Since 2011 · Taipei</div>
     <h1><span ${reveal(350)}>重現臺灣</span><span ${reveal(500)}>傳統茶葉工藝</span></h1>
     <p ${reveal(700)}>致力以科學與化學的角度融入傳統製茶技術及茶葉烘焙，將台灣茶產業文化推向國際市場。</p>
+    <div class="hero-actions" ${reveal(820)}><a class="btn btn--solid" href="${p}teas/">探索茶品</a><a class="link" href="${p}services/">合作洽詢 →</a></div>
   </div>
   <a class="scroll-hint" href="#chapter-1" data-scroll-down data-bob>SCROLL ↓</a>
 </section>
 
 <div class="marquee" aria-hidden="true">
-  <div class="marquee-track" data-marquee>${Array(2).fill(['傳統龍眼木炭焙', '合歡山茶園', '青心烏龍・鐵觀音', 'Charcoal Roasted Oolong', 'Since 2011'].map(s => `<span>${s}</span><span class="star">✦</span>`).join('')).join('')}</div>
+  <div class="marquee-track">${['傳統龍眼木炭焙', '合歡山茶園', '青心烏龍・鐵觀音', 'Charcoal Roasted Oolong', 'Since 2011'].map(s => `<span>${s}</span><span class="star">✦</span>`).join('')}</div>
 </div>
 
 <section class="split chapter1" id="chapter-1">
@@ -216,8 +218,7 @@ page('', {
 </section>
 
 <section class="craft">
-  <div class="parallax parallax--lg" data-parallax>${pic(p, 's1')}</div>
-  <div class="shade"></div>
+  <div class="parallax parallax--lg" data-parallax>${pic(p, 'craft-clean')}</div>
   <div class="embers" data-embers></div>
   <div class="content">
     <div class="label" ${reveal(0)}>第三章 · 匠心</div>
@@ -266,7 +267,7 @@ page('about/', {
 <div class="stats">
   <div class="stat" ${reveal(0)}><span class="num" data-count="2011">2011</span><span class="cap">創立年份</span></div>
   <div class="stat" ${reveal(120)}><span class="num" data-count="${products.length}">${products.length}</span><span class="cap">款精緻茶品</span></div>
-  <div class="stat" ${reveal(240)}><span class="num" data-count="${cats.length}">${cats.length}</span><span class="cap">焙度系列</span></div>
+  <div class="stat" ${reveal(240)}><span class="num" data-count="${cats.length}">${cats.length}</span><span class="cap">茶品系列</span></div>
 </div>
 <section class="two-col about-garden">
   <div class="media portrait" ${reveal(0)}><div class="fill" data-kb>${pic(p, 'about-us-2', { sizes: '(max-width: 840px) 100vw, 50vw', alt: '合歡山茶園' })}</div></div>
@@ -358,14 +359,15 @@ for (const t of tabs) {
   const isAll = t.key === 'all';
   page(isAll ? 'teas/' : `teas/${t.key}/`, {
     title: isAll ? '茶品意境' : t.full, active: 'teas', image: 's2',
-    description: isAll ? `風玥茶研所 ${products.length} 款精緻茶品，依焙火程度分為淺焙清香、中焙韻香、深焙濃香與競賽級四大系列。` : `風玥茶研所${t.full}：${products.filter(x => x.cat === t.key).map(x => x.name).join('、')}。`,
+    description: isAll ? `風玥茶研所 ${products.length} 款精緻茶品，探索淺焙清香、中焙韻香、深焙濃香，以及獨立精選的競賽級系列。` : `風玥茶研所${t.full}：${products.filter(x => x.cat === t.key).map(x => x.name).join('、')}。`,
     body: p => `${banner(p, { img: 's2', label: '精緻茶品 · TEAS', title: '茶品意境', sub: '茶境的詮釋，任何人皆可以有獨特見解' })}
 <div class="tea-filter" data-tea-filter data-initial="${t.key}" data-titles="${esc(JSON.stringify(teaTitles))}">
   <nav class="tea-tabs" aria-label="茶品分類">
-    ${tabs.map(c => `<a href="${p}teas/${c.key === 'all' ? '' : c.key + '/'}" data-cat="${c.key}" data-pos="${c.pos}" aria-current="${c.key === t.key}">${c.label}<span class="count">${c.key === 'all' ? products.length : products.filter(x => x.cat === c.key).length}</span></a>`).join('\n    ')}
+    ${tabs.map(c => `<a href="${p}teas/${c.key === 'all' ? '' : c.key + '/'}" data-cat="${c.key}" data-pos="${roastPositions[c.key] ?? ''}" aria-current="${c.key === t.key}">${c.label}<span class="count">${c.key === 'all' ? products.length : products.filter(x => x.cat === c.key).length}</span></a>`).join('\n    ')}
   </nav>
-  <div class="roast-bar" aria-hidden="true"><div class="marker" style="left:${t.pos}%"></div></div>
+  <div class="roast-bar" aria-hidden="true"><div class="marker"${roastPositions[t.key] == null ? ' hidden' : ` style="left:${roastPositions[t.key]}%"`}></div></div>
   ${roastScale(true)}
+  <p class="filter-note">競賽級為獨立精選系列，不代表焙火深淺。</p>
 </div>
 <div class="tea-grid" data-tea-grid>
   ${products.map((x, i) => teaCard(p, x, i).replace('class="tea-card"', `class="tea-card"${isAll || x.cat === t.key ? '' : ' hidden'}`)).join('\n  ')}
@@ -391,11 +393,11 @@ products.forEach((t, i) => {
       <h1 ${reveal(200)}>${esc(t.name)}</h1>
       ${t.maker ? `<div class="maker" ${reveal(250)}>${esc(t.maker)}</div>` : ''}
       <div class="desc body-text" ${reveal(300)}>${t.lines.map(l => `<p>${esc(l)}</p>`).join('')}</div>
-      <div class="roast" ${reveal(400)} role="img" aria-label="焙度：${c.label}">
-        <div class="roast-bar"><div class="marker" style="left:${c.pos}%"></div></div>
+      ${t.cat === 'award' ? `<div class="award-note" ${reveal(400)}>競賽級精選茶品<span>競賽級為獨立系列，不代表焙火深淺。</span></div>` : `<div class="roast" ${reveal(400)} role="img" aria-label="焙度：${c.label}">
+        <div class="roast-bar"><div class="marker" style="left:${roastPositions[t.cat]}%"></div></div>
         ${roastScale(false)}
-      </div>
-      <a class="btn" href="${p}contact/?tea=${encodeURIComponent(t.name)}" ${reveal(500)}>聯繫我們瞭解詳細訊息</a>
+      </div>`}
+      <a class="btn" href="${p}contact/?tea=${encodeURIComponent(t.name)}" ${reveal(500)}>詢問這款茶</a>
     </div>
   </section>
   <nav class="pager" aria-label="上一款與下一款">
@@ -505,7 +507,7 @@ for (const kind of ['news', 'blog']) {
 page('contact/', {
   title: '聯絡資訊', active: 'contact', image: 'contact',
   description: `風玥茶研所聯絡資訊：${C.address}，電話 ${C.phone}，Email ${C.email}，營業時間${C.hours}。`,
-  body: p => `${banner(p, { img: 'contact', label: 'CONTACT', title: '聯絡資訊' })}
+  body: p => `${banner(p, { img: 'contact', label: 'CONTACT', title: '聯絡資訊', compact: true })}
 <section class="two-col contact-main">
   <div class="left">
     <h2 ${reveal(0)}>放眼新世代，茶美學的疆域，<br>如何傳承傳統再創新，等您來《風玥茶研所》一同探索與開創。</h2>
@@ -521,15 +523,16 @@ page('contact/', {
     </div>
   </div>
   <div ${reveal(150)}>
-    <form class="contact-form" data-contact-form data-endpoint="${esc(CONFIG.formEndpoint)}" data-mailto="${C.email}" action="${esc(CONFIG.formEndpoint)}" method="post">
-      <div class="title">發送一封電子郵件</div>
-      <label>姓名<input name="name" autocomplete="name" required></label>
-      <label>Email<input name="email" type="email" autocomplete="email" required></label>
-      <label>主旨<input name="subject" required></label>
-      <label>訊息<textarea name="message" rows="5" required></textarea></label>
+    <form class="contact-form" aria-describedby="contact-method" data-contact-form data-endpoint="${esc(CONFIG.formEndpoint)}" data-mailto="${C.email}" action="${esc(CONFIG.formEndpoint)}" method="post">
+      <div class="title">聯絡我們</div>
+      <p class="form-note" id="contact-method">${CONFIG.formEndpoint ? '以下欄位皆為必填，送出後會顯示寄送結果。' : '以下欄位皆為必填。填寫後將開啟您的郵件程式，請在郵件程式中確認寄出；亦可直接使用上方 Email 聯絡我們。'}</p>
+      <label>姓名（必填）<input name="name" autocomplete="name" required></label>
+      <label>Email（必填）<input name="email" type="email" autocomplete="email" required></label>
+      <label>主旨（必填）<input name="subject" required></label>
+      <label>訊息（必填）<textarea name="message" rows="5" required></textarea></label>
       <label class="hp" aria-hidden="true">請勿填寫<input name="website" tabindex="-1" autocomplete="off"></label>
       <p class="error" role="alert" hidden>訊息未能送出，請稍後再試，或直接來信 ${C.email}。</p>
-      <button class="btn" type="submit">發送電子郵件</button>
+      <button class="btn" type="submit">${CONFIG.formEndpoint ? '發送電子郵件' : '開啟郵件程式'}</button>
     </form>
     <div class="form-done" data-form-done role="status" hidden>
       <div class="ty">Thank you</div>

@@ -8,10 +8,11 @@
   const header = document.querySelector('.site-header');
   const progress = document.querySelector('.progress');
   const parallax = reduce ? [] : $$('[data-parallax]');
+  let menuScrollY = null;
   let ticking = false;
   const onScroll = () => {
     ticking = false;
-    const y = window.scrollY;
+    const y = menuScrollY ?? window.scrollY;
     header.classList.toggle('is-scrolled', y > 40);
     const h = document.documentElement.scrollHeight - innerHeight;
     progress.style.transform = 'scaleX(' + (h > 0 ? y / h : 0) + ')';
@@ -28,19 +29,51 @@
 
   // ---------- 行動版選單 ----------
   const toggle = document.querySelector('.nav-toggle');
-  toggle.addEventListener('click', () => {
-    const open = document.body.classList.toggle('nav-open');
-    toggle.setAttribute('aria-expanded', open);
+  const nav = document.querySelector('.site-nav');
+  const mobileNav = window.matchMedia('(max-width: 860px)');
+  const background = $$('main, .site-footer');
+  const setMenu = (open, restoreFocus = false) => {
+    if (open === document.body.classList.contains('nav-open')) return;
+    if (open) {
+      menuScrollY = window.scrollY;
+      Object.assign(document.body.style, { position: 'fixed', top: `-${menuScrollY}px`, width: '100%' });
+      nav.scrollTop = 0;
+    }
+    document.body.classList.toggle('nav-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? '關閉選單' : '開啟選單');
-  });
+    background.forEach(el => { el.inert = open; });
+    if (!open) {
+      const y = menuScrollY ?? 0;
+      menuScrollY = null;
+      Object.assign(document.body.style, { position: '', top: '', width: '' });
+      window.scrollTo({ top: y, behavior: 'instant' });
+      if (restoreFocus) toggle.focus({ preventScroll: true });
+    }
+    onScroll();
+  };
+  toggle.addEventListener('click', () => setMenu(!document.body.classList.contains('nav-open')));
+  // Unlock before following links, including links to the current page.
+  $$('a', header).forEach(a => a.addEventListener('click', () => setMenu(false)));
+  mobileNav.addEventListener('change', e => { if (!e.matches) setMenu(false); });
+  window.addEventListener('pageshow', () => setMenu(false));
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && document.body.classList.contains('nav-open')) toggle.click();
+    if (!document.body.classList.contains('nav-open')) return;
+    if (e.key === 'Escape') { e.preventDefault(); setMenu(false, true); }
+    if (e.key === 'Tab') {
+      const items = $$('a[href], button:not([disabled])', header).filter(el =>
+        el.getClientRects().length && getComputedStyle(el).visibility === 'visible');
+      const first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
   });
 
   // ---------- SCROLL 提示 ----------
   $$('[data-scroll-down]').forEach(el => el.addEventListener('click', e => {
     e.preventDefault();
-    window.scrollTo({ top: innerHeight - 40, behavior: reduce ? 'auto' : 'smooth' });
+    const target = document.querySelector(el.getAttribute('href'));
+    if (target) window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - header.getBoundingClientRect().height, behavior: reduce ? 'auto' : 'smooth' });
   }));
 
   // ---------- 進場浮現、數字跑動、時間軸畫線 ----------
@@ -83,10 +116,6 @@
       [{ transform: 'scale(1)' }, { transform: 'scale(1.1)' }],
       { duration: 24000, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' }
     ));
-    $$('[data-marquee]').forEach(el => el.animate(
-      [{ transform: 'translateX(0)' }, { transform: 'translateX(-50%)' }],
-      { duration: 42000, iterations: Infinity, easing: 'linear' }
-    ));
     $$('[data-bob]').forEach(el => el.animate(
       [{ transform: 'translateY(0)' }, { transform: 'translateY(8px)' }],
       { duration: 1400, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' }
@@ -100,7 +129,7 @@
     const fields = $$('[data-embers]').map(el => {
       const c = document.createElement('canvas');
       el.appendChild(c);
-      const f = { el, c, ctx: c.getContext('2d'), ps: Array.from({ length: 42 }, () => ember(true)), visible: false };
+      const f = { el, c, ctx: c.getContext('2d'), ps: Array.from({ length: innerWidth < 640 ? 8 : 18 }, () => ember(true)), visible: false };
       new IntersectionObserver(([e]) => { f.visible = e.isIntersecting; }).observe(el);
       return f;
     });
@@ -146,7 +175,8 @@
     const select = (cat, push) => {
       tabs.forEach(t => t.setAttribute('aria-current', t.dataset.cat === cat ? 'true' : 'false'));
       const tab = tabs.find(t => t.dataset.cat === cat);
-      marker.style.left = tab.dataset.pos + '%';
+      marker.hidden = !tab.dataset.pos;
+      if (tab.dataset.pos) marker.style.left = tab.dataset.pos + '%';
       let i = 0;
       cards.forEach(c => {
         const show = cat === 'all' || c.dataset.cat === cat;
